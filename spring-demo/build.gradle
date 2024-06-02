@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.springframework'
+version = '5.2.26.BUILD-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://maven.aliyun.com/repository/public/'
+    }
+}
+
+dependencies {
+    compile(project(":spring-context"))
+    compile(project(":spring-aop"))
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

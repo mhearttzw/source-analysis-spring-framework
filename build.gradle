@@ -279,6 +279,9 @@ configure(allprojects) { project ->
 		repositories {
 			mavenCentral()
 			maven { url "https://repo.spring.io/libs-spring-framework-build" }
+			maven {
+				url 'https://maven.aliyun.com/repository/public/'
+			}
 		}
 	}
 	configurations.all {

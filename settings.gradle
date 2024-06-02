@@ -1,3 +1,4 @@
+// 定义子项目列表的项目配置文件，也是最关键的配置文件
 pluginManagement {
 	repositories {
 		gradlePluginPortal()
@@ -36,3 +37,4 @@ rootProject.name = "spring"
 rootProject.children.each {project ->
 	project.buildFileName = "${project.name}.gradle"
 }
+include 'spring-demo'
